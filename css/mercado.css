@@ -1,0 +1,413 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: supreme;
+    outline: none;
+    scroll-behavior: smooth;
+}
+*:hover , :focus{
+    outline: none;
+}
+*::selection {
+    background:transparent;
+}
+body{
+    height: unset;
+    min-height: 100%;
+    width: unset;
+    min-width: 100%;
+	margin: 0px;
+    background: #222;
+    overflow-x: hidden;
+}
+@font-face{
+    font-family: supreme;
+    font-display: auto;
+	src: url('../fonts/supreme.ttf');
+}
+@keyframes show{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar {
+    width: 0.8vh;
+    background: white;
+}
+*::-webkit-scrollbar-thumb {
+    background:rgb(28, 115, 230);
+}
+.site{
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 2vh;
+    padding-bottom: 10vh;
+    height: 40vh;
+}
+#banmer{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    min-height: 66vh;
+    background: linear-gradient(45deg, #000724, rgb(14, 12, 22));
+    border-bottom: 0.4vh solid white;
+    padding-bottom: 4vh;
+}
+#hold-pos{
+    min-width: 100vw;
+    padding-top: 0vh;
+    position: relative;
+    z-index: 4;
+    background: #000;
+}
+.nesq{
+    position: absolute;
+    z-index: 5;
+	bottom: 0vh;
+	left: 0vh;
+    width: 20%;
+    min-width: 20vh;
+}
+.ndir{
+	position: absolute;
+    z-index: 5;
+    top: 0;
+	right: 0;
+    width: 18%;
+    min-width: 18vh;
+}
+#coin{
+    width: 17vh;
+    min-width: 12vh;
+    margin-top: 2vh;
+}
+.holder-item{
+    padding: 2vh 2vh 0vh 2vh;
+    width: 36vh;
+    min-height: 40vh;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 2vh;
+    animation: show 0.4s;
+}
+.item{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 1vh;
+    font-size: 4vh;
+    display: inline-block;
+}
+.foto-item{
+    width: 100% !important;
+    border-radius: 1vh 1vh 0vh 0vh;
+}
+.nome-item{
+    color: white;
+    font-size: 3vh;
+    text-align: left;
+    padding-left: 2vh;
+    font-weight: 500;
+}
+.comprar-item{
+    position: relative;
+    bottom: 12vh;
+    right: -35%;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5.5vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(0, 104, 0), rgb(0, 255, 0));
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    border-radius: 50%;
+    z-index: 6;
+    cursor: pointer;
+}
+.sobre-item{
+    position: relative;
+    bottom: 28vh;
+    right: -35%;
+    height: 5.5vh;
+    width: 7vh;
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(0, 49, 104), rgb(0, 81, 255));
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    border-radius: 50%;
+    z-index: 7;
+    cursor: pointer;
+}
+.raridade-item{
+    position: relative;
+    bottom: 28vh;
+    right: -35%;
+    height: 6vh;
+    padding-top: 1vh;
+    width: 7vh;
+    font-size: 4vh;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    z-index: 7;
+}
+.raridade-item img{
+    width: 80%;
+}
+.comprar-indisponivel{
+    position: relative;
+    bottom: 12vh;
+    right: -35%;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5.5vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(104, 0, 0), rgb(255, 0, 0));
+    border-radius: 50%;
+    z-index: 6;
+}
+.info-item{
+    padding-top: 1vh;
+    border-radius: 0vh 0vh 0.8vh 0.8vh;
+    margin-top: -1vh;
+    height: 8vh;
+    background: linear-gradient(45deg, #062661, rgb(0, 63, 179));
+}
+.categorias{
+    margin-top: -8vh;
+    transition: 0.4s;
+    width: 100%;
+    min-height: 6vh;
+}
+.dados-pan{
+    height: 90vh;
+    padding-top: 10vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 8;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.dados{
+    min-height: 76vh;
+    padding-top: 2vh;
+    width: 50vw;
+    min-width: 40vh;
+    background: #fff;
+    border-radius: 2vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+#content{
+    height: 60vh;
+    overflow-y: scroll;
+    background: #eee;
+}
+#content::-webkit-scrollbar {
+    width: 0.8vh;
+    background: transparent;
+}
+.holder-dado{
+    padding: 2vh;
+    width: 20vw;
+    min-width: 24vh;
+    display: inline-block;
+}
+.dado{
+    width: 100%;
+    font-size: 4vh;
+    border-radius: 1vh;
+    color: rgb(0, 63, 179);
+    border: 0.5vh solid rgb(0, 63, 179);
+    padding-top: 0.5vh;
+}
+.nome-dado{
+    font-size: 4vh;
+}
+.info-pan{
+    width: 25vh;
+    background: transparent;
+    min-height: 25vh;
+    padding-top: 3.4vh;
+    padding-bottom: 4vh;
+    transition: 0.4s;
+}
+.pad-info{
+    padding: 0 4vh 0 4vh;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+.hold-info{
+    width: 30vw;
+    min-width: 38vh;
+    height: 34vh;
+    padding: 0vh 0vh 0vh 0vh;
+    background: #fff;
+    border-radius: 2vh;
+    border-bottom: 0.7vh #aaa solid;
+    color: #000;
+    margin-top: 4vh;
+    display: inline-block;
+}
+#locked{
+    background: rgba(20, 20, 20, 0.6);
+    width: 100%;
+    height: 80vh;
+    padding-top: 20vh;
+    z-index: 10;
+    position: fixed;
+}
+#locked-img{
+    height: 30vh;
+    width: 30vh;
+}
+#locked-msg{
+    font-size: 7vh;
+    padding-top: 4vh;
+    color: #fff;
+}
+#bem-vindo{
+    font-size: 8vh;
+    color: white;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 6;
+}
+#setaDireita{
+    height: 90%;
+    width: 16%;
+    position: absolute;
+    z-index: 7;
+    right: 4vh;
+    border-radius: 0vh 2vh 2vh 0vh;
+    background-image: url('../img/right-arrow.png');
+    background-size: 10vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 1;
+}
+#setaEsquerda{
+    height: 90%;
+    width: 16%;
+    position: absolute;
+    z-index: 7;
+    left: 4vh;
+    cursor: pointer;
+    border-radius: 2vh 0vh 0vh 2vh;
+    background-image: url('../img/left-arrow.png');
+    background-size: 10vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    opacity: 0;
+}
+.info{
+    transition: 0.4s;
+    opacity: 0;
+    display: none;
+}
+#pointer{
+    height: 5vw;
+    min-height: 25vh;
+    display: block;
+}
+.titulo-categoria{
+    padding-top: 4vh;
+    color: white;
+    font-size: 8vh;
+    width: 85%;
+    border-bottom: 0.4vh solid white;
+}
+#categorias-select{
+    padding-top: 1.5vh;
+    height: 8.5vh;
+    background: #111;
+    border-bottom: 0.4vh solid white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#categorias-select::-webkit-scrollbar {
+    height: 0.8vh;
+    background: transparent;
+}
+.categorias-options{
+    font-size: 5vh;
+    width: 14vw;
+    min-width: 20vh;
+    color: white;
+    padding: 0.5vh 0vh 0vh 0vh;
+    border-radius: 1vh;
+    border: 0.4vh solid white;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.categorias-options:hover{
+    color: black;
+    background: white;
+}
+.options-holder{
+    padding: 0vh 4vh 0vh 4vh;
+    display: inline-block;
+}
+#voltar{
+    position: fixed;
+    bottom: 2vh;
+    right: -20vh;
+    padding-top: 2.5vh;
+    height: 7.5vh;
+    width: 10vh;
+    font-size: 7vh;
+    color: white;
+    background: rgb(0, 110, 255);
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.4s;
+}
+#pic-holder{
+    display: block;
+    height: 15vh;
+    width: 15vh;
+    margin-top: 0vh; 
+    background-size: cover !important;
+    border-radius: 50%;
+    border: 1vh rgb(28, 115, 230) double;
+    background-repeat: no-repeat !important;
+}
+#dado-ok{
+    width: 10vh;
+    height: 6vh;
+    border: 0.5vh rgb(0, 202, 0) solid;
+    background: transparent;
+    border-radius: 1vh;
+    cursor: pointer;
+    color: rgb(0, 202, 0);
+    padding: 0.5vh 0vh 0.5vh 0vh;
+    transition: 0.2s;
+    font-size: 4vh;
+}
+#dado-ok:hover{
+    background: rgb(0, 202, 0);
+    color: white;
+}
+#time-logo{
+    width: 60%;
+}
+#destaque-foto{
+    width: 17vh;
+    min-width: 12vh;
+    margin-top: 2vh;
+    border-radius: 50%;
+    border: 0.5vh solid #0041b9;
+}

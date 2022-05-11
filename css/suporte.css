@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: supreme;
+    outline: none;
+}
+*:hover , :focus{
+    outline: none;
+}
+body{
+    height: unset;
+    min-height: 100%;
+    width: unset;
+    min-width: 100%;
+	margin: 0px;
+    background: #111;
+}
+@font-face{
+    font-family: supreme;
+    font-display: auto;
+	src: url('../fonts/supreme.ttf');
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 1vh;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(28, 115, 230);
+}
+option{
+    -webkit-appearance: none;
+}
+#suporte{
+    margin-top: 10vh;
+    width: 30vh;
+}
+p{
+    min-width: 34vh;
+    width: 50%;
+    transition: 0.4s;
+}
+#select-assunto{
+    min-width: 34vh;
+    width: 30%;
+    text-align: center;
+    font-size: 6vh;
+    color: #000;
+    border-radius: 1vh;
+    border: none;
+    border-bottom: 0.5vh rgb(28, 115, 230) solid;
+    transition: 0.2s;
+    display: block;
+    -webkit-appearance: none;
+    padding: 0.5vh 0vh 0.5vh 2vh;
+    background: url("../img/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 6vh;
+    background-color: #fff;
+    cursor: pointer;
+}
+#desc{
+    -webkit-appearance: none;
+	min-width: 34vh;
+    width: 50%;
+    height: 60vh;
+    font-size: 5vh;
+    color: #000;
+    background: #fff !important;
+    border-radius: 1vh;
+    border: none;
+    border-bottom: 0.5vh rgb(28, 115, 230) solid;
+    resize: none;
+    padding: 1vh 2.5vh 1vh 2.5vh;
+}
+#btn{
+    background: transparent;
+    color: rgb(28, 115, 230);
+    width: 20%;
+    min-width: 32vh;
+    font-family: supreme;
+    font-size: 5vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    height: 8vh;
+    border-radius: 1vh;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 6vh;
+    display: block;
+}
+#btn:hover{
+    color: white;
+    background:rgb(28, 115, 230);
+}

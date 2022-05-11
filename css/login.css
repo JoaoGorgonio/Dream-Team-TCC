@@ -1,0 +1,230 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: supreme;
+}
+.btnInicio{
+    min-width: 18vh;
+    width: 16%;
+    text-decoration: none;
+    background: transparent;
+    color: rgb(0, 194, 16);
+    border: 0.5vh solid rgb(0, 194, 16);
+    font-size: 4.5vh;
+    border-radius: 1vh;
+    transition: 0.2s;
+    padding: 0.5vh;
+    display: inline-block;
+}
+.btnInicio:hover{
+    color: white;
+    background:rgb(0, 194, 16);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btnInicio-padding{
+    margin-top: 2vh;
+    padding: 0vh 1vh 0vh 1vh;
+    display: inline-block;
+}
+.indic{
+    width: 50%;
+    height: 8vh;
+}
+body{
+    height: unset;
+    min-height: 100%;
+    width: unset;
+    min-width: 100%;
+	margin: 0px;
+	background: url(../img/wallpaperdesk.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+@font-face{
+	font-family: supreme;
+	src: url('../fonts/supreme.ttf');
+}
+@keyframes appear{
+    from{
+        transform: scale(0.4);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.site{
+    width: 90%;
+    max-width: 120vh;
+    background-color: #fff;
+    border-radius: 2vh;
+    margin-top: 6vh;
+    border-bottom: 1vh rgb(28, 115, 230) solid;
+    min-height: 86vh;
+    padding-bottom: 2vh;
+}
+.dados{
+    min-width: 28vh;
+    margin-top: 6vh;
+    width: 80%;
+    text-align: center;
+    font-size: 6vh;
+    color: #000;
+    background: #fff;
+    border-radius: 1vh;
+    border: none;
+    border-bottom: 0.5vh rgb(28, 115, 230) solid;
+    transition: 0.2s;
+    padding: 0.5vh 0vh 0.5vh 0vh;
+    box-shadow: 0 0 1vh 0.1vh rgba(0, 0, 0, 0.192);
+}
+.dados:focus{
+    background: rgba(192, 214, 255, 0.733);
+}
+input:focus{
+    outline: none;
+}
+input[type=date]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor: text;
+}
+input[type=date]{
+    cursor: text;
+}
+.btn{
+    background: transparent;
+    color: rgb(28, 115, 230);
+    width: 62%;
+    font-family: supreme;
+    font-size: 5vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    height: 8vh;
+    border-radius: 1vh;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 3vh;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn:hover{
+    color: white;
+    background:rgb(28, 115, 230);
+}
+.error{
+    font-size: 3vh;
+    font-family: supreme;
+    color: red;
+    position: absolute;
+    margin-top: 4vh;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 1vh;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(28, 115, 230);
+}
+.loginfo{
+    transition: 0.4s;
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+}
+.loading{
+    width: 20%;
+    margin-top: 4vh;
+}
+#userpic{
+    margin-top: 12vh;
+    width: 14vw;
+    height: 14vw;
+    min-width: 26vh;
+    min-height: 26vh;
+    border: 1.5vh rgb(28, 115, 230) double;
+    border-radius: 50%;
+}
+#formlog{
+    transition: 0.4s;
+}
+#tituloLogin{
+    color: #222;
+    font-size: 9vh;
+    padding-top: 5vh;
+    font-weight: 500;
+}
+.dados-msg{
+    min-width: 28vh;
+    margin-top: 3vh;
+    width: 60%;
+    text-align: center;
+    font-size: 5vh;
+    color: black;
+    background: transparent;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    transition: 0.2s;
+    padding: 0.5vh 0vh 0.5vh 0vh;
+}
+#mostrarSenha{
+    min-width: 28vh;
+    width: 60%;
+    text-align: center;
+    font-size: 4vh;
+    background: rgb(28, 115, 230);
+    border-radius: 0vh 0vh 1vh 1vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    transition: 0.2s;
+    background-image: url("../img/view.png");
+    background-size: 4vh;
+    background-repeat: no-repeat;
+    background-position: 50% 0.4vh;
+    cursor: pointer;
+    caret-color: transparent;
+}
+#redefinirSenha{
+    margin-top: 3vh;
+    min-width: 28vh;
+    width: 60%;
+    color: rgb(0, 2, 145);
+    font-size: 3vh;
+    cursor: pointer;
+    font-size: 3.5vh;
+    padding-bottom: 2vh;
+}
+#chkSessao{
+    -webkit-appearance: none;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 1vh;
+    border: 0.3vh solid rgb(28, 115, 230);
+    cursor: pointer;
+}
+#chkSessao:checked{
+    background: rgb(28, 115, 230);
+}
+progress[value]{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2vh;
+    width: 80%;
+    min-width: 30vh;
+    display: block;
+    opacity: 1;
+    transition: 0.2s;
+    margin-top: 12vh;
+}
+progress[value]::-webkit-progress-value{
+    background: linear-gradient(to right, rgb(0, 57, 133) 80%, rgb(42, 134, 255));
+    -webkit-background-clip: background;
+    border-radius: 0.5vh;
+    transition: 2.2s;
+}
+progress[value]::-webkit-progress-bar{
+    background-color: transparent;
+    border-radius: 0.5vh;
+}

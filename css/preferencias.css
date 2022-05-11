@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: supreme;
+    outline: none;
+}
+*:hover , :focus{
+    outline: none;
+}
+body{
+    height: unset;
+    min-height: 100%;
+    width: unset;
+    min-width: 100%;
+	margin: 0px;
+    background: #111;
+}
+@font-face{
+    font-family: supreme;
+    font-display: auto;
+	src: url('../fonts/supreme.ttf');
+}
+@keyframes show{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+@keyframes roll{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 1vh;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(28, 115, 230);
+}
+.dados-pan{
+    height: 90vh;
+    padding-top: 10vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 8;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.dados{
+    min-height: 76vh;
+    padding-top: 2vh;
+    width: 50vw;
+    min-width: 40vh;
+    background: #fff;
+    border-radius: 2vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+#content{
+    height: 60vh;
+    overflow-y: scroll;
+    background: #eee;
+}
+#content::-webkit-scrollbar {
+    width: 0.8vh;
+    background: transparent;
+}
+.settings{
+	height: 20vh;
+	width: 20vh;
+	animation: roll 6s linear infinite;
+	margin-top: 12vh;
+}
+.nome-acao{
+    width: 30%;
+    min-width: 30vh;
+    font-size: 4vh;
+    margin-top: 4vh;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(0, 102, 255);
+    padding: 1vh 2vh 1vh 2vh;
+    color: rgb(0, 102, 255);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nome-acao:hover{
+    background: rgb(0, 102, 255);
+    color: white;
+}
+.nome-info{
+    width: 30%;
+    min-width: 30vh;
+    font-size: 4vh;
+    margin-top: 4vh;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(0, 102, 255);
+    color: white;
+    padding: 1vh 2vh 1vh 2vh;
+    background: rgb(0, 102, 255);
+    transition: 0.2s;
+}
+.nome-acao-red{
+    width: 30%;
+    min-width: 30vh;
+    font-size: 4vh;
+    margin-top: 4vh;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(170, 0, 0);
+    padding: 1vh 2vh 1vh 2vh;
+    color: rgb(170, 0, 0);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nome-acao-red:hover{
+    background: rgb(170, 0, 0);
+    color: white;
+}
+.dados-msg{
+    min-width: 28vh;
+    margin-top: 3vh;
+    width: 60%;
+    text-align: center;
+    font-size: 5vh;
+    color: black;
+    background: transparent;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    transition: 0.2s;
+    padding: 0.5vh 0vh 0.5vh 0vh;
+}
+.mostrarSenha{
+    min-width: 28vh;
+    width: 60%;
+    text-align: center;
+    font-size: 4vh;
+    background: rgb(28, 115, 230);
+    border-radius: 0vh 0vh 1vh 1vh;
+    border: 0.5vh solid rgb(28, 115, 230);
+    transition: 0.2s;
+    background-image: url("../img/view.png");
+    background-size: 4vh;
+    background-repeat: no-repeat;
+    background-position: 50% 0.4vh;
+    cursor: pointer;
+    caret-color: transparent;
+}

@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: supreme;
+    outline: none;
+}
+*:hover , :focus{
+    outline: none;
+}
+body{
+    height: unset;
+    min-height: 100vh;
+    width: unset;
+    min-width: 100%;
+	margin: 0px;
+    background: #111;
+}
+@font-face{
+    font-family: supreme;
+    font-display: auto;
+	src: url('../fonts/supreme.ttf');
+}
+@keyframes show{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 1vh;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(28, 115, 230);
+}
+.hold-time{
+    padding-top: 12vh;
+    min-height: 78vh;
+    height: unset;
+}
+.nesq{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+    width: 20%;
+    min-width: 20vh;
+}
+.ndir{
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 0;
+    width: 18%;
+    min-width: 18vh;
+}
+.holder-item{
+    padding: 2vh 2vh 0vh 2vh;
+    width: 36vh;
+    min-height: 38vh;
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 2vh;
+    animation: show 0.4s;
+}
+.item{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 1vh;
+    font-size: 4vh;
+    display: inline-block;
+}
+.foto-item{
+    width: 100% !important;
+    border-radius: 1vh 1vh 0vh 0vh;
+}
+.nome-item{
+    color: white;
+    font-size: 3vh;
+    text-align: left;
+    padding-left: 2vh;
+    font-weight: 500;
+}
+.comprar-item{
+    position: relative;
+    bottom: 12vh;
+    right: -35%;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5.5vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(0, 104, 0), rgb(0, 255, 0));
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    border-radius: 50%;
+    z-index: 6;
+    cursor: pointer;
+}
+.sobre-item{
+    position: relative;
+    bottom: 28vh;
+    right: -35%;
+    height: 5.5vh;
+    width: 7vh;
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(0, 49, 104), rgb(0, 81, 255));
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    border-radius: 50%;
+    z-index: 7;
+    cursor: pointer;
+}
+.raridade-item{
+    position: relative;
+    bottom: 28vh;
+    right: -35%;
+    height: 6vh;
+    padding-top: 1vh;
+    width: 7vh;
+    font-size: 4vh;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5vh 0.1vh rgba(53, 53, 53, 0.4);
+    z-index: 7;
+}
+.raridade-item img{
+    width: 80%;
+}
+.comprar-indisponivel{
+    position: relative;
+    bottom: 12vh;
+    right: -35%;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5.5vh;
+    color: white;
+    background: linear-gradient(45deg, rgb(104, 0, 0), rgb(255, 0, 0));
+    border-radius: 50%;
+    z-index: 6;
+}
+.info-item{
+    padding-top: 1vh;
+    border-radius: 0vh 0vh 0.8vh 0.8vh;
+    margin-top: -1vh;
+    height: 8vh;
+    background: linear-gradient(45deg, #062661, rgb(0, 63, 179));
+}

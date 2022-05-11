@@ -1,0 +1,113 @@
+@font-face{
+	font-family: supreme;
+	src: url('../fonts/supreme.ttf');
+}
+body{
+    height: 100%;
+}
+.pag{
+    height: 100vh;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.optbar{
+    transition: 0.4s;
+    position: fixed;
+    min-width: 20vh;
+    max-width: 52vh;
+    margin-left: -100vh;
+    height: 100vh;
+    min-height: 100vh;
+    background: #222;
+    z-index: 50;
+    box-shadow: 0 0 2vh 0.1vh rgba(0, 0, 0, 0.2);
+    font-family: supreme;
+}
+.baropt{
+    width: 82%;
+    padding: 1vh 0vh 1vh 6%;
+    font-size: 5vh;
+    color: white;
+    margin-top: 2.5vh;
+    margin-left: 6%;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+#dt{
+    font-size: 5vh;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.baropt-select{
+    width: 82%;
+    padding: 1vh 0vh 1vh 6%;
+    font-size: 5vh;
+    color: white;
+    background: #053999;
+    box-shadow: 0vh 0vh 2vh 0.2vh #053999;
+    margin-top: 2.5vh;
+    margin-left: 6%;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+.navicon{
+    cursor: pointer;
+    position: absolute;
+    z-index: 15;
+    left: 1.8vh;
+    top: 1.8vh;
+    height: 6vh;
+    transition: 0.2s;
+}
+.line{
+    width: 70%;
+    height: 0.45vh;
+    background-color: #fff;
+    margin-top: 2%;
+    border-radius: 10vh;
+}
+#logout{
+    width: 82%;
+    padding: 1vh 0vh 1vh 6%;
+    font-size: 5vh;
+    color: white;
+    margin-top: 4vh;
+    margin-left: 6%;
+    cursor: pointer;
+    border-radius: 1vh;
+    position: absolute;
+    bottom: 2vh;
+}
+.nav-icon-select{
+    margin-top: 1vh;
+    border-radius: 1vh;
+    background: #00215e;
+    box-shadow: 0vh 0vh 1vh 0.1vh #00215ecb;
+    height: 6vh;
+    display: inline-block;
+}
+.nav-icon{
+    cursor: pointer;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    height: 5vh;
+    display: inline-block;
+}
+#holder-icon{
+    margin-top: 2vh;
+    width: 100%;
+}
+#close{
+    cursor: pointer;
+    height: 7vh;
+    padding: 2vh;
+}
+.list-icon{
+    margin-left: -1vh;
+    padding-right: 1vh;
+    height: 4vh;
+    width: 4vh;
+}
