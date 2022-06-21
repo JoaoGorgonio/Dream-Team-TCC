@@ -32,7 +32,7 @@
                     <input type='text' id='cpfUsuario' style='display: none;' name='cpfUsuario'>
                     <a class="error" id="errorname" style='margin-top: 10vh;'></a>
                     <input autocomplete="off" class="dados" pattern="[a-zA-z\s]+$" onkeyup="validName(this), letra(this)" type="text" required="required" minlength="8" name="nome" placeholder="Nome completo" maxlength="80" id="name" style='margin-top: 14vh;'><br>
-                    <a class="error" id="errorcpf"></a>
+                    <a class="error" id="errorcpf2"></a>
                     <input autocomplete="off" class="dados" min="0" required onkeyup="validcpf(), nm(this)" max="99999999999" id='mask-cpf' type="number" placeholder="CPF"><br>
                     <a class="error" id="errormail"></a>
                     <input autocomplete="off" class="dados" onkeyup="validmail(this), chmail(this)" required="required" minlength="6" name="email" maxlength="80" type="email" id="mail" placeholder="E-mail"><br>
